@@ -1,9 +1,13 @@
+const register = [];
+
 function AddAccount() {
   console.log("Creating account. . .");
   const name = prompt("Enter your name");
   const LastName = prompt("Enter your last name");
   const password = prompt("Create your password");
-  const account = { name, LastName, password };
+  const account = [{ nombre: name, apellido: LastName, contrasena: password }];
+  register.push(...account);
+  console.log("Account created successfully!");
 }
 
 function Menu() {
